@@ -1,14 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-::before,
+/* ::before,
 ::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -24,6 +25,7 @@ body {
   --footer-bg-color: #2f303a;
   --adress-color: rgba(255, 255, 255, 0.6);
   --portfolio-button-color: #f5f4fa;
+  --portfolio-feader-border: #ECECEC;
 }
 
 ul {
@@ -40,15 +42,34 @@ a {
 
 .conteiner {
   width: 1200px;
+  margin: 0 auto;
 }
 .header {
   height: 80px;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .navigation {
+  width: 518px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation_list {
+  width: 294px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation_contact {
+  width: 307px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -99,12 +120,26 @@ a {
   background-color: var(--section-bg-color);
 }
 
+.bussines {
+  height: 600px;
+  text-align: center;
+  padding-top: 200px;
+  /* margin-bottom: 96px; */
+}
+
+.doing {
+  padding-top: 94px;
+}
+
 .bussines-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3;
+  width: 696px;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .bussines-button {
@@ -118,16 +153,31 @@ a {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  /* display: block;
-  margin: 0 auto; */
+  display: block;
+  margin: 0 auto;
 }
 
+/* .doing {
+  margin-bottom: 96px;
+} */
+
 .doing_title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   color: var(--primary-text-color);
   text-transform: uppercase;
+}
+
+.doing_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doing_list-item {
+  height: 101px;
+  width: 260px;
 }
 
 .doing_discription {
@@ -137,24 +187,63 @@ a {
   color: var(--description-color);
 }
 
+.whatwedoing {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .works {
+  width: 376px;
+  height: 42px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   color: var(--primary-text-color);
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.works__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team {
+  padding-top: 94px;
+  /* margin-bottom: 94px; */
 }
 
 .team-title {
+  height: 42px;
+  width: 264px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   color: var(--primary-text-color);
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.team_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team_list-item {
+  width: 270px;
+  height: 368px;
+}
+
+.person_info {
+  margin-top: 30px;
+  text-align: center;
 }
 
 .name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 10px;
   color: var(--primary-text-color);
 }
 
@@ -166,6 +255,8 @@ a {
 }
 
 .footer {
+  padding-top: 60px;
+  height: 256px;
   background-color: var(--footer-bg-color);
 }
 
@@ -190,6 +281,14 @@ a {
   color: var(--primary-white-color);
   /* font-style: normal; */
   line-height: 1.17;
+  margin-top: 20px;
+}
+
+.footer-email {
+  margin-bottom: 9px;
+}
+.footer-adress {
+  margin-bottom: 9px;
 }
 
 .footer-email,
@@ -212,6 +311,26 @@ a {
 } */
 
 /* Portfolio */
+
+.portfolio-header {
+  border-bottom: 1px solid;
+  border-color: var(--portfolio-feader-border);
+}
+
+
+.portfolio-section {
+  padding-bottom: 94px;
+}
+
+.title_list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 56px;
+  padding-top: 100px; 
+}
+
+
+
 .title_list-button {
   width: 145px;
   height: 38px;
@@ -223,6 +342,23 @@ a {
   color: var(--primary-text-color);
   border: none;
   cursor: pointer;
+}
+
+.title_list-item:not(:last-child){
+  margin-right: 8px;
+}
+
+
+.servises_list {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.servises_list-item {
+  width: 370px;
+  height: 404px;
+  margin-bottom: 30px;
 }
 
 .servises__list-title {
